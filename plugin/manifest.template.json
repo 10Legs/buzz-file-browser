@@ -1,0 +1,9 @@
+{
+  "id": "buzz.file-browser",
+  "name": "File browser",
+  "apiVersion": 1,
+  "description": "Browse and download files from a server you run (read-only, allowlisted folders).",
+  "host": {
+    "networkOrigins": []
+  }
+}

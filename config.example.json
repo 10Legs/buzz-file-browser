@@ -1,0 +1,11 @@
+{
+  "roots": ["/srv/projects", "/srv/outbox"],
+  "max_file_mb": 8,
+  "bind_host": "127.0.0.1",
+  "port": 8793,
+  "token_file": "token",
+  "extra_deny_names": [],
+  "uploads": {
+    "psql_command": []
+  }
+}

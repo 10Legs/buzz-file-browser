@@ -1,0 +1,6 @@
+config.json
+token
+*.token
+.env
+dist/
+__pycache__/

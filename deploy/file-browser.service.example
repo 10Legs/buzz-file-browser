@@ -1,0 +1,12 @@
+# systemd user unit. Copy to ~/.config/systemd/user/file-browser.service, edit the two paths, then:
+#   systemctl --user daemon-reload && systemctl --user enable --now file-browser
+[Unit]
+Description=Buzz file browser server (read-only, localhost)
+
+[Service]
+Environment=FILE_BROWSER_CONFIG=/path/to/config.json
+ExecStart=/usr/bin/python3 /path/to/buzz-file-browser/server/file_browser_server.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
